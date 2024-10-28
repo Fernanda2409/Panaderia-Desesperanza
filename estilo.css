@@ -1,0 +1,177 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7e4d1; 
+    color: #3e2723; 
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #d32f2f; 
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5em;
+    margin: 0;
+    text-shadow: 2px 2px #3e2723;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+h2 {
+    color: #d32f2f; 
+    text-align: center;
+    text-shadow: 2px 2px #f7b8b8;
+    margin-top: 0;
+}
+
+
+button {
+    background-color: #d32f2f;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #b71c1c;
+}
+
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table th, .table td {
+    padding: 15px;
+    text-align: center;
+}
+
+.table th {
+    background-color: #ffccbc; 
+    color: #3e2723;
+}
+
+.table td {
+    background-color: #ffe0b2; 
+    color: #5d4037;
+    border-bottom: 1px solid #ffccbc;
+}
+
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.galeria img {
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    border: 5px solid #ffb74d; 
+    transition: transform 0.3s;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+    border-color: #e64a19; 
+}
+
+
+.container {
+    background: repeating-linear-gradient(
+        -45deg,
+        #ffe0b2,
+        #ffe0b2 10px,
+        #ffb74d 10px,
+        #ffb74d 20px
+    );
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 10px;
+    border: 2px solid #ffccbc;
+    border-radius: 5px;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+    border-color: #d32f2f;
+    outline: none;
+}
+
+
+.modal-content {
+    background-color: #ffccbc;
+    color: #3e2723;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+footer {
+    background-color: #3e2723; 
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+@keyframes parpadeo {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.calavera {
+    font-size: 1.5em;
+    margin-right: 10px;
+    animation: parpadeo 1s infinite alternate;
+}

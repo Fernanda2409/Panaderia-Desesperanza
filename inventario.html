@@ -1,0 +1,31 @@
+<%- include('layout') %>
+<div class="container">
+    <h2>Inventario de Panes de Temporada</h2>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Precio</th>
+                <th>Stock</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% panes.forEach(pan => { %>
+            <tr>
+                <td><%= pan.nombre %></td>
+                <td><%= pan.descripcion %></td>
+                <td><%= pan.precio %></td>
+                <td><%= pan.stock %></td>
+                <td>
+                    <button class="btn btn-primary" onclick="editarPan('<%= pan._id %>')">Editar</button>
+                    <form action="/inventario/eliminar/<%= pan._id %>" method="POST">
+                        <button type="submit" class="btn btn-danger">Eliminar</button>
+                    </form>
+                </td>
+            </tr>
+            <% }) %>
+        </tbody>
+    </table>
+</div>
